@@ -1,13 +1,15 @@
 import React from 'react';
 import Player from './Player';
+import './styles.css';
 
 class Scoreboard extends React.Component {
   render() {
     return(
-      <div>
-        Players:
-        <ul>
+      <div className="scoreboard-container" >
+        <h2 className="scoreboard-title" >Players:</h2>
+        <ul className="players-list" >
           {
+            (this.props.players.length > 0 ?
             this.props.players.map((player) => {
               return (
                 <Player
@@ -19,6 +21,9 @@ class Scoreboard extends React.Component {
                 />
               )
             })
+            :
+            <p>Please add players to start.</p>
+            )
           }
         </ul>
       </div>

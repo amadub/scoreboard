@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 class AddPlayer extends React.Component {
     handleSubmit = (e) => {
@@ -9,9 +10,9 @@ class AddPlayer extends React.Component {
   render() {
     return(
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <input type="text" name="playerName" />
-          <button>Add Player</button>
+        <form className="add-player__form" onSubmit={this.handleSubmit}>
+          <input className="field-input" type="text" name="playerName" />
+          <button className="button">Add Player</button>
         </form>
       </div>
     )

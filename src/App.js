@@ -1,6 +1,7 @@
 import React from 'react';
 import Scoreboard from './components/Scoreboard';
 import AddPlayer from './components/AddPlayer';
+import './styles.css';
 
 class App extends React.Component {
   state = {

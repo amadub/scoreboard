@@ -1,0 +1,28 @@
+.remove-player__button {
+  padding: 8px 16px;
+  background-color: red;
+  margin: 0 10px;
+  border: none;
+  color: white;
+}
+
+.change-score__button {
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.player-info {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  list-style: none;
+  display: flex;
+}
+
+.player-name {
+  margin-right: 5px;
+}
+
+.player-score {
+  font-weight: bold;
+  margin: 0 10px;
+}
